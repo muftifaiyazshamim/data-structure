@@ -10,7 +10,7 @@ void enqueu()
 {
     if (rear == N - 1)
     {
-        cout << "Overflow!" << endl;
+        cout << "Overflow" << endl;
         return;
     }
     int x;
@@ -31,7 +31,7 @@ void dequeu()
 {
     if (front == -1 && rear == -1)
     {
-        cout << "Underflow!" << endl;
+        cout << "Underflow" << endl;
     }
     else if (front == rear)
     {
@@ -40,7 +40,7 @@ void dequeu()
     }
     else
     {
-        cout << "Deleted Value: " << queu[front] << endl;
+        cout << "Deleted Value : " << queu[front] << endl;
         front++;
     }
 }
@@ -49,7 +49,7 @@ void peek()
 {
     if (front == -1 && rear == -1)
     {
-        cout << "Queue is empty!" << endl;
+        cout << "Queue is empty" << endl;
     }
     else
     {
@@ -59,11 +59,7 @@ void peek()
 
 void display()
 {
-    if (front == -1 && rear == -1)
-    {
-        cout << "Queue is empty!" << endl;
-        return;
-    }
+   
     for (int i = front; i <= rear; i++)
     {
         cout << queu[i] << " ";
